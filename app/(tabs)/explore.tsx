@@ -1,11 +1,11 @@
 import { StyleSheet, Text, View } from 'react-native';
 
-import GameMovie from '@/api/GameMovie';
+
 import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
 import { IconSymbol } from '@/components/ui/IconSymbol';
-import { useRouter } from 'expo-router';
+
 import { useEffect, useState } from 'react';
 import { GameProp } from '.';
 import Game from '@/api/Game';
@@ -15,7 +15,7 @@ import Game from '@/api/Game';
 export default function TabTwoScreen() {
   const [data, setData] = useState<GameProp[]>();
 
-  const router = useRouter(); // Use the router hook from expo-router
+
 
   useEffect(() => {
     async function getData() {

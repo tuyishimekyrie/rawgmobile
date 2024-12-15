@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Text, View, Image, StyleSheet } from 'react-native';
 import { Stack, useLocalSearchParams } from 'expo-router';
 import GameById from '@/api/GameById';
-import GameMovie from '@/api/GameMovie';
+
 import FlexContainer from '@/components/FlexContainer';
 
 interface GameDetail {
@@ -18,7 +18,7 @@ const FALLBACK_IMAGE = 'https://example.com/fallback-image.png';
 const GameDetails = () => {
   const { id } = useLocalSearchParams();
   const gameId = typeof id === 'string' ? id : null;
-  const gameMovie = typeof id === 'string' ? id : null;
+
 
   const [data, setData] = useState<GameDetail | null>(null);
 

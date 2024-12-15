@@ -1,7 +1,7 @@
 import React, { PropsWithChildren } from 'react'
 import { View, StyleSheet } from 'react-native'
 
-const FlexContainer = ({ children }: PropsWithChildren<{}>) => {
+const FlexContainer = ({ children }: PropsWithChildren) => {
     return (
         <View style={styles.container}>
             {children}

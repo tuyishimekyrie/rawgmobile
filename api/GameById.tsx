@@ -1,5 +1,5 @@
 const GameById = async (id: string) => {
-    const api_key = "5aca4c341b734d7d9467e33525e17719"; // Replace with environment variable in production
+    const api_key = "5aca4c341b734d7d9467e33525e17719"; 
     const endpoint = `https://api.rawg.io/api/games/${id}?key=${api_key}`;
   
     try {
@@ -11,7 +11,7 @@ const GameById = async (id: string) => {
       return result;
     } catch (error) {
       console.error(`Error fetching game by ID (${id}):`, error);
-      return null; // Return `null` to indicate failure
+      return null; 
     }
   };
   
